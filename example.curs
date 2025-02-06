@@ -1,0 +1,39 @@
+function hz
+int A 0
+if A < 10000000
+plus A 10
+minus A 9
+back
+turnoff 0
+back
+function count
+int C 0
+int CA 1
+int CB 2
+if CB < 10000000
+plus C CA
+plus C CB
+plus CA CB
+plus CA C
+plus CB CA
+plus CB C
+back
+int F 0
+if F < 1000
+plus F 1
+start hz
+back
+turnoff 0
+back
+function main
+int B 5
+int AB 64
+plus B 500
+for B > AB
+minus B 150
+back
+spam B
+spam AB
+start count
+turnoff 0
+back
